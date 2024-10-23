@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: "Amiri", serif;
+}
+#nav-bar{
+    position: sticky;
+    top:0;
+    z-index:10;
+}
+.navbar{
+    background-image: linear-gradient(to right, #259c04,#134705);
+    padding:0 !important;
+
+    
+}
+.navbar-brand img{
+    height:40px;
+    padding-left:30px;
+    
+}
+.navbar-nav li{
+    padding:0 10px;
+}
+.navbar-nav li a{
+    color:#fff !important ;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars{
+    color:#fff;
+    font-size:30px !important;
+}
+.navbar-toggler{
+    outline: none !important;
+    font: size 1.5em;;
+}
+#banner{
+    background-image:linear-gradient(to right, #259c04,#134705);
+    color: #fff;
+    padding-top:5%;
+}
+
+.row .promo-main{
+    letter-spacing:1px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #fff;
+    margin:50px;
+
+}
+
+.promo-title{
+    font-size: 40px;
+    font-weight:600;
+    margin-top: 100px;
+    text-align: center;
+   color: #fff;
+
+
+  }
+ .carousel-control-next{
+
+    padding-left:150px;
+   
+
+  }
+.carousel-control-prev{
+
+  padding-right:100px;
+
+}
+ 
+
+.dropdown-menu{
+    background-color: #134705;
+}
+.dropdown-menu a:hover{
+    background-color: #aef584;
+}
+.img-fluid {
+    position: relative;
+    right:0;
+    bottom:0;
+    
+    /* animation: moveTractor 3s ease-in infinite alternate;
+     */
+  }
+  .carousel-item img {
+    width: 40%; /* الحجم المتوسط */
+    float: right; /* الصورة على الجانب الأيمن */
+  }
+  /* @keyframes moveTractor {
+    0% { right: -22%; }
+    100% { right: 0%; }
+  } */
+
+.bottom-img{
+    width:100%;
+    
+}
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .dark-mode #nav-bar {
+    background-color: #444;
+  }
+
+  .navbar-nav li a :hover{
+      border-bottom: #fff;
+      color: #134705;
+  }
+  .dropdown-menu li a{
+    color: #333;
+  }
+  #about{
+    margin-bottom:100px;
+  }
+  #about .btn{
+    color:#fff;
+
+  }
+ #about .about-text h2{
+  font-weight: 600;
+  font-size: 80px;
+ }
+
+ #about .about-text p{
+  font-weight: 600;
+  font-family:'Courier New', Courier, monospace;
+  margin-bottom:80px;
+ }
+  #services{
+    padding:80px 0;
+   
+  }
+ .services{
+    padding:30px;
+    margin-bottom: 0px;
+    border-radius:10px;
+    transition: border-color 0.3s ease,box-shadow 0.3s ease;
+ }
+
+
+
+  .service-img{
+    width:250px;
+    margin-top:20px;
+  }
+  .services h4{
+    padding:5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+ }
+
+ .title{
+  text-transform: uppercase;
+}
+ .title::before{
+    margin-top: 15px;
+    content:'';
+    background: #269c05;
+    height: 5px;
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(53px);
+
+  }
+  
+  .title::after{
+    content:'';
+    background: #269c05;
+    height: 10px;
+    width:150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:40px;
+    display: block;
+    transform: translateY(8px);
+
+  }
+  .products .title::before{
+    margin-top: 15px;
+    content:'';
+    background: #fff;
+    height: 5px;
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(53px);
+
+  }
+  
+  .products .title::after{
+    content:'';
+    background: #fff;
+    height: 10px;
+    width:150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:40px;
+    display: block;
+    transform: translateY(8px);
+
+  }
+  .btn{
+    padding:10px 20px;
+    font-size: 1rem;
+    background-image:linear-gradient(to right, #259c04,#134705);
+  }
+  .services .btn :hover{
+    background-color: #fff;
+    color: #134705;
+  }
+  #service .btn-primary{ 
+    box-shadow: none;
+    padding:8px 25px;
+    border:none;
+    border-radius:20px;
+    background-image:linear-gradient(to right, #259c04,#134705);
+  }
+  .col{
+    padding: 5px;
+ }
+  .card{
+    position: relative;
+    border:none;
+    animation: appear 2s linear;
+    
+  }
+  .card-body .card-title{
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+    margin-top:20px;
+  }
+  .btn-lg{
+    border:none;
+  }
+.btn-lg :hover{
+  background: #fff;
+  color: #134705;
+}
+  @keyframes appear {
+    from{
+        opacity:0;
+        scale:0.2;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
+  
+    
+  }
+  
+
+ 
+
+  @media (max-width: 768px){
+   
+    .carousel-item img{
+      width:100%;
+      height: auto;
+    }
+    .carousel-caption{
+      background: rgba(2, 58, 4, 0.6);
+      font-size:0.9rem;
+      
+    }
+    .carousel-caption .promo-main{
+      margin-right:50px;
+      text-align: center;
+
+    }
+    #services .row .card{
+      margin-bottom:10px;
+    
+     }
+    
+  }
+
+.products{
+  background-image:linear-gradient(to right, #259c04,#134705);
+  color:#fff
+}
+.footer{
+  background-image:linear-gradient(to right, #259c04,#134705);
+  color: #fff;
+}
